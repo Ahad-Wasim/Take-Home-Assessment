@@ -4,6 +4,7 @@ import rootReducer from './reducers';
 import AsyncStorage from '@react-native-community/async-storage';
 import { persistStore, persistReducer } from 'redux-persist'
 
+// load store into asyncstorage for a faster user experience
 const persistConfig = {
   key: 'root',
   // provide the natice storage on mobile devices

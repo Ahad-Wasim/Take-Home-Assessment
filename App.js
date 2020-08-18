@@ -12,6 +12,7 @@ import Root from './Root';
 import { store, persistor } from './store';
 
 // SafeAreaView supports is to handle iphone 11 edgecase
+// PersistGate will persist the store inside asyncstorage (faster UI expereince)
 export default App = (props) => {
   return (
     <Provider store={store}>
